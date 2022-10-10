@@ -6,14 +6,12 @@ app.set('view engine','ejs');
 app.use(express.static('public'))
 
 app.get('/',function(req, res){
-    
+    res.render('home');
 
- 
+});
 
-    res.render('home',{
-    
-        
-    });
+app.get('/pergunta',function(req, res) {
+    res.render('pergunta');
 });
 
 app.listen(port,function(error) {
