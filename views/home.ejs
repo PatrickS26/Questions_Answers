@@ -1,12 +1,28 @@
 <%- include('./partials/head.ejs') %>
 <body>
     <%- include('./partials/navbar.ejs')%>
-    <button type="button" class="btn btn-link">Link</button>
-    <h1>TEXTO COM bootstrap</h1>
 
 
+    
+    <div class="container">
+        <hr>
+        <h1 style="color: white;">Lista de perguntas registradas ate o momento:</h1>
+        <hr>
+        <% questions.forEach(questions =>  { %>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h3 style="color: white;"><%= questions.tittle %></h3>
+                </div>
+                <div class="card-footer">  
+                    <button type="button" class="btn btn-primary ">Answer</button>
+                </div>
+            </div>
+        <%})%>
+        <hr>
+        <button type="button" class="btn btn-primary" onclick="gotohome()">Link para o formulario de Perguntas</button>
 
-    <img src="/img/punpun.png" alt="punpun">
+    </div>
     
 </body>
 <%- include('./partials/footer.ejs')%>

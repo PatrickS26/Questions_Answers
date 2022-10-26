@@ -9,13 +9,13 @@
                 <h3>Perguntas</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form method="POST" action="/answerMyquestion">
                     <label>titulo</label>
-                    <input type="text" placeholder="Texto pergunta" class="form-control">
+                    <input name = "tittle" type="text" placeholder="Texto pergunta" class="form-control">
                     <label>Pergunta</label>
-                    <textarea name="AreaPergunta" id="TextoPergunta" class="form-control"></textarea>
+                    <textarea name="description" id="TextoPergunta" class="form-control"></textarea>
                     <br>
-                    <button class="btn btn-primary">Teste</button>
+                    <button class="btn btn-primary">Save</button>
                 </form>    
             </div>
             
